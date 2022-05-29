@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+
+
+<html data-wf-page="618ae1d30cb2b64affb28b35" data-wf-site="618ae1d30cb2b6d5feb28b34">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Ladder</title>
+    <meta content="Connecting the African Talent Ecosystem to the Global Workforce" name="description" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link href="css/normalize.css" rel="stylesheet" type="text/css" />
+    <link href="css/components.css" rel="stylesheet" type="text/css" />
+    <link href="css/withpropel.css" rel="stylesheet" type="text/css" />
+    <!-- [if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" type="text/javascript"></script><![endif] -->
+    <script type="text/javascript">
+        !(function(o, c) {
+            var n = c.documentElement,
+                t = ' w-mod-';
+            (n.className += t + 'js'),
+            ('ontouchstart' in o ||
+                (o.DocumentTouch && c instanceof DocumentTouch)) &&
+            (n.className += t + 'touch')
+        })(window, document)
+    </script>
+    <link href="images/favicon.png" rel="shortcut icon" type="image/x-icon" />
+    <link href="images/webclip.png" rel="apple-touch-icon" />
+</head>
+
+<body class="body">
+    <div class="w-embed">
+        <style>
+            .card {
+                background: linear-gradient( 0deg, rgba(0, 128, 255, 0.11), rgba(0, 128, 255, 0.11)), #ffffff;
+            }
+
+            .card.lightblue {
+                background: linear-gradient( 0deg, rgba(0, 207, 255, 0.13), rgba(0, 207, 255, 0.13)), #ffffff;
+            }
+
+            .gradient-overlay {
+                background: linear-gradient( 180deg, rgba(255, 255, 255, 0) 25.21%, #ffffff 97.51%);
+            }
+
+            .container.cards {
+                pointer-events: none;
+            }
+        </style>
+        <div id="awwwards" style="
+          position: fixed;
+          z-index: 999;
+          transform: translateY(-50%);
+          top: 50%;
+          left: 0;
+        ">
+            <a href="#" target="_blank"><svg width="53.08" height="171.358">
+            <path
+              class="js-color-bg"
+              fill="black"
+              d="M0 0h53.08v171.358H0z"
+            ></path>
+            <g class="js-color-text" fill="white">
+              <path
+                d="M20.047 153.665v-1.9h3.888v-4.093h-3.888v-1.9h10.231v1.9h-4.59v4.093h4.59v1.9zM29.898 142.236c-.331.565-.784.997-1.359 1.294s-1.222.446-1.944.446c-.721 0-1.369-.149-1.943-.446a3.316 3.316 0 0 1-1.36-1.294c-.331-.564-.497-1.232-.497-2.002s.166-1.438.497-2.002a3.316 3.316 0 0 1 1.36-1.294c.574-.297 1.223-.445 1.943-.445.723 0 1.369.148 1.944.445a3.307 3.307 0 0 1 1.359 1.294c.331.564.497 1.232.497 2.002s-.166 1.438-.497 2.002m-1.703-3.347c-.435-.33-.967-.496-1.601-.496-.633 0-1.166.166-1.601.496-.433.332-.649.78-.649 1.346 0 .564.217 1.013.649 1.345.435.331.968.497 1.601.497.634 0 1.166-.166 1.601-.497.435-.332.649-.78.649-1.345.001-.566-.214-1.014-.649-1.346M22.911 134.852v-1.813h1.186a3.335 3.335 0 0 1-.951-1.009 2.423 2.423 0 0 1-.352-1.271c0-.682.19-1.229.57-1.645.381-.413.932-.621 1.652-.621h5.262v1.812h-4.721c-.419 0-.727.096-.921.285-.195.19-.292.447-.292.769 0 .302.115.58.35.833.234.254.577.458 1.03.613.454.156.993.234 1.616.234h2.938v1.813h-7.367zM29.898 125.136a3.314 3.314 0 0 1-1.359 1.294c-.575.297-1.222.445-1.944.445-.721 0-1.369-.148-1.943-.445a3.322 3.322 0 0 1-1.36-1.294c-.331-.565-.497-1.232-.497-2.002 0-.771.166-1.438.497-2.003a3.313 3.313 0 0 1 1.36-1.293c.574-.297 1.223-.446 1.943-.446.723 0 1.369.149 1.944.446s1.028.728 1.359 1.293.497 1.232.497 2.003c.001.769-.166 1.436-.497 2.002m-1.703-3.347c-.435-.331-.967-.497-1.601-.497-.633 0-1.166.166-1.601.497-.433.331-.649.778-.649 1.345 0 .564.217 1.013.649 1.344.435.332.968.498 1.601.498.634 0 1.166-.166 1.601-.498.435-.331.649-.779.649-1.344.001-.567-.214-1.014-.649-1.345M22.911 117.75v-1.812h1.199c-.419-.265-.742-.586-.972-.966s-.345-.784-.345-1.213c0-.272.05-.569.146-.892l1.682.336a1.429 1.429 0 0 0-.205.76c0 .576.261 1.048.783 1.418.521.37 1.342.557 2.461.557h2.617v1.812h-7.366zM29.812 111.252c-.391.511-.857.851-1.403 1.016l-.776-1.446c.381-.138.68-.329.893-.577.215-.249.321-.544.321-.885a1.2 1.2 0 0 0-.168-.658c-.112-.175-.294-.263-.548-.263-.225 0-.406.105-.548.313-.142.21-.291.534-.446.973-.019.068-.058.17-.117.307-.224.565-.506 1.004-.848 1.315-.34.313-.779.467-1.314.467-.381 0-.727-.102-1.039-.306a2.185 2.185 0 0 1-.744-.84 2.554 2.554 0 0 1-.279-1.207c0-.497.105-.949.314-1.359.211-.408.506-.725.886-.949l.993 1.082c-.43.292-.644.686-.644 1.184a.84.84 0 0 0 .154.504.471.471 0 0 0 .401.212c.176 0 .338-.103.49-.307.15-.205.334-.604.547-1.199.205-.564.474-1.001.805-1.308.332-.308.756-.46 1.271-.46.721 0 1.299.229 1.732.687s.65 1.057.65 1.797c.001.759-.194 1.396-.583 1.907M35.481 17.006l-4.782 14.969h-3.266l-2.584-9.682-2.584 9.682h-3.268l-4.782-14.969h3.713l2.673 10.276 2.525-10.276h3.445l2.524 10.276 2.674-10.276zM37.978 27.163c1.426 0 2.496 1.068 2.496 2.495 0 1.425-1.07 2.495-2.496 2.495-1.425 0-2.494-1.07-2.494-2.495-.001-1.427 1.069-2.495 2.494-2.495"
+              ></path>
+            </g></svg
+        ></a>
+        </div>
+    </div>
+    <div class="overflow-hidden">
+        <div data-w-id="c51d76eb-c358-9eeb-2e7f-f099fb90cece" class="hero">
+            <div class="hero-inner">
+                <div class="nav">
+                    <div class="nav-inner">
+                        <a href="#" class="logo w-inline-block">
+                            <div class="logo-lottie" data-w-id="a5fb4e73-ed78-f0f7-05ed-cdcc0a9fcb8e" data-animation-type="lottie" data-src="documents/Logo-Anim.json" data-loop="0" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="3.20320307273407"
+                                data-duration="0"></div>
+                        </a>
+                        <div class="nav-links-wrapper">
+                            <div data-hover="false" data-delay="0" class="nav-link-dropdown white w-dropdown">
+                                <div class="nav-dropdown-button white w-dropdown-toggle">
+                                    <div class="dropdown-icon w-icon-dropdown-toggle"></div>
+                                    <div>Why Ladder?</div>
+                                </div>
+                                <nav class="nav-dropdown-list w-dropdown-list">
+                                    <a href="#" class="nav-dropdown-link white w-dropdown-link">For Companies</a
+                    >
+                    <a
+                      href="#"   
+                      class="nav-dropdown-link white last w-dropdown-link"
+                      >For Communities</a
+                    >
+                  </nav>
+                </div>
+                <div
+                  data-hover="false"
+                  data-delay="0"
+                  class="nav-link-dropdown white w-dropdown"
+                >
+                  <div class="nav-dropdown-button white w-dropdown-toggle">
+                    <div class="dropdown-icon w-icon-dropdown-toggle"></div>
+                    <div>Learn</div>
+                  </div>
+                  <nav class="nav-dropdown-list w-dropdown-list">
+                    <a
+                       href="#"
+                      class="nav-dropdown-link white w-dropdown-link"
+                      >About Us</a
+                    >
+                    <a
+                      href="#"
+                      class="nav-dropdown-link white w-dropdown-link"
+                      >Case Studies</a
+                    >
+                    <a
+                      href="#"
+                      class="nav-dropdown-link white last hide w-dropdown-link"
+                      >Showcase</a
+                    >
+                  </nav>
+                </div>
+                <a href="#" class="nav-link w-inline-block">
+                  <div>Contact us</div>
+                </a>
+                                    <a href="#" class="button nav-button w-inline-block">
+                                        <div>Sign In</div>
+                                    </a>
+                            </div>
+                        </div>
+                        <div class="hamburger">
+                            <div data-is-ix2-target="1" class="hamburger-lottie" data-w-id="69f83b14-4b98-ba4a-7dea-e65e5dc88ad7" data-animation-type="lottie" data-src="documents/lf30_editor_3vxssgm8.json" data-loop="0" data-direction="1" data-autoplay="0" data-renderer="svg" data-default-duration="4"
+                                data-duration="0" data-ix2-initial-state="24"></div>
+                        </div>
+                    </div>
+                    <div class="hero-text-wrapper">
+                        <div class="hero-animation-block">
+                            <div class="hero-anim-inner">
+                                <h1 class="h0">
+                                    <span class="skyblue-text"><strong>Create <br /></strong
+                  ></span>
+                                </h1>
+                                <h1 class="h0">
+                                    <span class="skyblue-text"><strong>Scale<br /></strong
+                  ></span>
+                                </h1>
+                                <h1 class="h0">
+                                    <span class="skyblue-text"><strong>Grow<br /></strong
+                  ></span>
+                                </h1>
+                                <h1 class="h0">
+                                    <span class="skyblue-text"><strong>Build<br /></strong
+                  ></span>
+                                </h1>
+                            </div>
+                        </div>
+                        <h1 class="h0"><strong>without Borders</strong></h1>
+                        <div class="hero-subtext-wrapper">
+                            <h4 class="mb-20">
+                                Access top Indian tech talent through Ladder's community-powered ecosystem
+                            </h4>
+                        </div>
+                        <a href="#" class="button blue w-inline-block">
+                            <div>Get started</div>
+                        </a>
+                    </div>
+                    <div class="hero-lottie mobile" data-w-id="0899e087-81cf-cb76-a9ff-8b79c57ea2b7" data-animation-type="lottie" data-src="documents/Steps.json" data-loop="0" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="7.040373420280091"
+                        data-duration="5"></div>
+                    <div data-is-ix2-target="1" class="hero-lottie" data-w-id="5886b790-b0f7-63c6-53bd-cf46cba07318" data-animation-type="lottie" data-src="documents/Steps_1.json" data-loop="0" data-direction="1" data-autoplay="0" data-renderer="svg" data-default-duration="7.040373420280091"
+                        data-duration="5" data-ix2-initial-state="0"></div>
+                </div>
+                <div class="trusted-brands-section">
+                    <div class="container brands">
+                        <div class="brands-text-wrapper">
+                            <h3 class="no-margin">
+                                Trusted by high-performing companies around the world.
+                            </h3>
+                        </div>
+                        <div class="brands-logo-wrapper">
+                            <div class="brand-logo-flex">
+                                <div class="brand-logo farfetch">
+                                    <img src="images/logo-farfetch.svg" loading="lazy" alt="" class="logo-image" />
+                                </div>
+                                <div class="brand-logo orange">
+                                    <img src="images/logo-orange.svg" loading="lazy" alt="" class="temp-image" />
+                                </div>
+                                <div class="brand-logo mercedez">
+                                    <img src="images/logo-1.svg" loading="lazy" alt="" class="logo-image" />
+                                </div>
+                            </div>
+                            <div class="brand-logo-flex bottom">
+                                <div class="brand-logo">
+                                    <img src="images/defined.png" loading="lazy" alt="" class="logo-image" />
+                                </div>
+                                <div class="brand-logo stepstone">
+                                    <img src="images/StepStone_201x_logo-1.svg" loading="lazy" alt="" class="logo-image" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="learn-section">
+            <div class="container learn">
+                <div>
+                    <div class="learn-text-wrapper">
+                        <h6>CaaS (Community-as-a-Service) High Power Growth</h6>
+                        <h2 class="sbold">
+                            We’re curating the <span class="blue-text">Indian</span> tech talent ecosystem and connecting it to the global workforce
+                        </h2>
+                    </div>
+                    <a href="#" class="button blue w-inline-block">
+                        <div>Learn more about us</div>
+                    </a>
+                </div>
+                <div class="globe-illustration"></div>
+            </div>
+        </div>
+        <div class="pro-section">
+            <div class="container pro">
+                <div class="pro-text-wrapper">
+                    <h1>
+                        Find your next <span class="lightblue-text">PRO</span> hire without hassle.
+                    </h1>
+                    <div class="pro-subtext-wrapper">
+                        <h6>
+                            High-growth companies like yours need to move at super speed. Ladder supports your hiring needs every step of the way, so you can focus on what really matters.
+                        </h6>
+                    </div>
+                </div>
+                <div class="stack-animation">
+                    <div data-w-id="522554a8-4d3b-7615-99b1-6921c4b8a19f" data-is-ix2-target="1" class="stack-lottie" data-animation-type="lottie" data-src="documents/Stack.json" data-loop="0" data-direction="1" data-autoplay="0" data-renderer="svg" data-default-duration="2.035368619133107"
+                        data-duration="0"></div>
+                    <div class="gradient-overlay"></div>
+                </div>
+            </div>
+        </div>
+        <div data-w-id="691a3d26-ae9a-b324-2092-650184bbdba6" class="cards-section">
+            <div class="pro-animation-fallback">
+                <div>
+                    Find your<br />next <span>Pro <br />Hire</span> within<br /><span class="blue-text">48 hours.</span
+          >
+        </div>
+      </div>
+      <div class="container cards pixels">
+        <div class="card pixels one">
+          <div class="card-header-block">
+            <div>Data<br />‍<span class="blue-text">Driven</span></div>
+            </div>
+            <div class="card-text-block">
+                <h5 class="no-margin">
+                    Leverage our extensive data on talent’s technical capacity, psychometric analysis, work preferences and growth potential
+                </h5>
+            </div>
+            <div class="path long">
+                <div class="cover"></div>
+            </div>
+            <div class="laptop large float pixels"></div>
+            <div class="path plane pixels"></div>
+            <div class="plane small float pixels"></div>
+        </div>
+        <div class="card lightblue pixels two">
+            <div class="card-header-block">
+                <div>World-Class <span class="blue-text">Talent</span></div>
+            </div>
+            <div class="card-text-block two">
+                <h5 class="no-margin">
+                    Access top-tier tech talent for Full-Time, Remote or Hybrid Roles.
+                </h5>
+            </div>
+            <div class="glasses float pixels"></div>
+            <div class="path vertical pixels"></div>
+            <div class="location float pixels"></div>
+        </div>
+        <div class="card lightblue pixels three">
+            <div class="card-header-block">
+                <div>Integrated <span class="lightblue-text">Services</span></div>
+            </div>
+            <div class="card-text-block three">
+                <h5 class="no-margin">
+                    Enjoy fast and seamless hiring processes, utilizing our simplified, plug-and-play services.
+                </h5>
+            </div>
+            <div class="keyboard float pixels"></div>
+            <div class="usb float pixels"></div>
+            <div class="laptop float pixels"></div>
+            <div class="path two pixels"></div>
+            <div class="path pixels services"></div>
+        </div>
+        <div class="card pixels four">
+            <div class="card-header-block">
+                <div><span class="blue-text">Competitive</span> Rates</div>
+            </div>
+            <div class="card-text-block four">
+                <h5 class="no-margin">
+                    World-class hiring service without breaking the bank.<br />
+                </h5>
+            </div>
+            <div class="door pixels"></div>
+            <div class="arrow pixels"></div>
+            <div class="plane float pixels"></div>
+        </div>
+    </div>
+    </div>
+    <div class="community-section">
+        <div class="container vertical">
+            <a href="#" class="button blue custom w-inline-block">
+                <div>Sign Up</div>
+            </a>
+            <div class="community-inner">
+                <div class="community-text-wrapper">
+                    <div class="community-text-header">
+                        <h3 class="no-margin">
+                            <strong>Community Network Growth Engine</strong>
+                        </h3>
+                    </div>
+                    <p>
+                        With our Community-as-a-Service platform, we provide tech communities with the tools they need to thrive and connect deeper on a local level, so they can further drive the growth of talent on the continent.
+                    </p>
+                </div>
+                <div class="community-center-block">
+                    <div class="community-header-block">
+                        <div>
+                            <span class="sbold">Why </span
+                ><span class="blue-text sbold">Ladder</span
+                ><span class="sbold">?</span>
+                        </div>
+                    </div>
+                    <div class="rocket-illustration">
+                        <div class="rocket" data-w-id="fc78b58d-eeb6-502f-aa4e-91a2bbe67f03" data-animation-type="lottie" data-src="documents/Rocket.json" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="5.3720384865644295"
+                            data-duration="6"></div>
+                    </div>
+                </div>
+                <div class="community-text-wrapper right">
+                    <div class="community-text-header">
+                        <h3 class="no-margin">
+                            <strong>Layered Talent Progression Framework</strong>
+                        </h3>
+                    </div>
+                    <p class="mb-20">
+                        By coupling smart assessment protocols with our tiered Work-Experience-Model, we are able to  drive deep data profiling on every individual in our ecosystem, to make intelligent matching decisions for companies across the world.
+                    </p>
+                </div>
+            </div>
+            <div class="community-header-block second hide">
+                <h2 class="sbold">Testimonials</h2>
+            </div>
+            <div class="testimonial-white-block">
+                <div class="testimonial-top-block hide">
+                    <div class="testimonial-block">
+                        <div class="testimonal-image-block">
+                            <img src="images/laurin.jpg" loading="lazy" alt="" class="testimonal-image" />
+                        </div>
+                        <div class="testimonial-header-wrapper">
+                            <h5 class="sbold no-margin">Laurin Hainy</h5>
+                            <div class="uppercase">Founder &amp; CEO, fairmoney</div>
+                        </div>
+                        <div class="testimonial-text-wrapper">
+                            <p>
+                                “With Ladder, we were able to deliver our robust payment platform for collections, disbursements and wallet services in under 6 months. The work delivered by our dedicated remote Freehands was top notch, the communication was seamless and we couldn’t
+                                have been happier with the overall experience”
+                            </p>
+                        </div>
+                    </div>
+                    <div class="testimonial-block right">
+                        <div class="testimonal-image-block two">
+                            <img src="images/robin.jpg" loading="lazy" alt="" class="testimonal-image" />
+                        </div>
+                        <div class="testimonial-header-wrapper">
+                            <h5 class="sbold no-margin">Robin Eppling</h5>
+                            <div class="uppercase">Orange telecoms</div>
+                        </div>
+                        <div class="testimonial-text-wrapper right">
+                            <p>
+                                “With the Propel project team, we were able to successfully test out a product hypothesis at low cost with minimal risk, and ready for scale.”
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-bottom-block">
+                    <div>Our Community Partners</div>
+                    <div data-delay="3500" data-animation="slide" class="logo-slider w-slider" data-autoplay="true" data-easing="ease" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="6" data-duration="500" data-infinite="true">
+                        <div class="slide-mask w-slider-mask">
+                            <div class="logo-slide w-slide">
+                                <div class="testimonal-brand-flex">
+                                    <div class="testimonial-brand-block">
+                                        <img loading="lazy" src="images/ifg.png" alt="" class="partner-logo" />
+                                    </div>
+                                    <div class="testimonial-brand-block two">
+                                        <img loading="lazy" src="images/angular.png" alt="" class="partner-logo" />
+                                    </div>
+                                    <div class="testimonial-brand-block three">
+                                        <img loading="lazy" src="images/logo-shecode.png" alt="" class="partner-logo" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="logo-slide w-slide">
+                                <div class="testimonal-brand-flex">
+                                    <div class="testimonial-brand-block four">
+                                        <img loading="lazy" src="images/semicolon.png" alt="" class="partner-logo" />
+                                    </div>
+                                    <div class="testimonial-brand-block five">
+                                        <img sizes="(max-width: 479px) 41vw, (max-width: 767px) 88.796875px, (max-width: 991px) 12vw, 100vw" srcset="
+                          images/WomenWhoCode-Lagos-p-500.png   500w,
+                          images/WomenWhoCode-Lagos-p-800.png   800w,
+                          images/WomenWhoCode-Lagos-p-1080.png 1080w,
+                          images/WomenWhoCode-Lagos.png        1200w
+                        " src="images/WomenWhoCode-Lagos.png" loading="lazy" alt="" class="partner-logo" />
+                                    </div>
+                                    <div class="testimonial-brand-block six">
+                                        <img loading="lazy" src="images/GDG-Aba-Light-Horizontal-Logo.png" alt="" class="partner-logo" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="logo-slide w-slide">
+                                <div class="testimonal-brand-flex">
+                                    <div class="testimonial-brand-block four">
+                                        <img sizes="(max-width: 479px) 41vw, (max-width: 767px) 88.796875px, (max-width: 991px) 12vw, 100vw" srcset="
+                          images/Codenovation-p-500.png  500w,
+                          images/Codenovation-p-800.png  800w,
+                          images/Codenovation.png       1080w
+                        " src="images/Codenovation.png" loading="lazy" alt="" class="partner-logo" />
+                                    </div>
+                                    <div class="testimonial-brand-block five">
+                                        <img loading="lazy" src="images/Dev-in-vogue.png" alt="" class="partner-logo" />
+                                    </div>
+                                    <div class="testimonial-brand-block six">
+                                        <img loading="lazy" src="images/More-Techies.png" alt="" class="partner-logo" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="logo-slide w-slide">
+                                <div class="testimonal-brand-flex">
+                                    <div class="testimonial-brand-block four">
+                                        <img loading="lazy" src="images/DevCongress-1.png" alt="" class="partner-logo" />
+                                    </div>
+                                    <div class="testimonial-brand-block five">
+                                        <img sizes="(max-width: 479px) 41vw, (max-width: 767px) 88.796875px, (max-width: 991px) 12vw, 100vw" srcset="
+                          images/Localhost-Logo-p-500.png   500w,
+                          images/Localhost-Logo-p-800.png   800w,
+                          images/Localhost-Logo-p-1080.png 1080w,
+                          images/Localhost-Logo.png        2000w
+                        " src="images/Localhost-Logo.png" loading="lazy" alt="" class="partner-logo" />
+                                    </div>
+                                    <div class="testimonial-brand-block six">
+                                        <img loading="lazy" src="images/RemoteAfrica.png" alt="" class="partner-logo" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hide w-slider-arrow-left">
+                            <div class="w-icon-slider-left"></div>
+                        </div>
+                        <div class="hide w-slider-arrow-right">
+                            <div class="w-icon-slider-right"></div>
+                        </div>
+                        <div class="slider-nav w-slider-nav w-round"></div>
+                        <div class="w-embed">
+                            <style>
+                                .w-slider-nav.w-round>div {
+                                    border-radius: 0%;
+                                }
+
+                                .w-slider-dot {
+                                    position: relative;
+                                    display: inline-block;
+                                    width: 20px;
+                                    height: 10px;
+                                    background: linear-gradient( 0deg, rgba(0, 128, 255, 0.2), rgba(0, 128, 255, 0.2)), #ffffff;
+                                    cursor: pointer;
+                                }
+
+                                .w-slider-dot.w-active {
+                                    background-color: #1504ff;
+                                }
+                            </style>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="black-block"></div>
+    <div data-w-id="8c99ce74-bb0c-c125-19ac-67592c36b313" class="footer">
+        <div class="container footer">
+            <div class="footer-top-block">
+                <div class="location-icon float"></div>
+                <a href="#" target="_blank" class="location-block w-inline-block">
+                    <div class="location-header">
+                        <div class="blue-line"></div>
+                        <div>New Delhi</div>
+                    </div>
+                    <div>Vikas Puri 78/79, 19 DC New Delhi, India</div>
+                </a>
+                <a href="#" target="_blank" class="location-block portugal w-inline-block">
+                    <div class="location-header">
+                        <div class="blue-line"></div>
+                        <div>Mumbai</div>
+                    </div>
+                    <div>K-65 Krassist creative product, Creative Block, Dharavi, Mumbai</div>
+                </a>
+                <a href="#" target="_blank" class="location-block lagos w-inline-block">
+                    <div class="location-header">
+                        <div class="blue-line"></div>
+                        <div>Chennai</div>
+                    </div>
+                    <div>54b Ranjappa Place, Koralas temp, Chennai, India</div>
+                </a>
+            </div>
+            <div class="subscription-block">
+                <div class="subscription-text-wrapper">
+                    <div class="subscription-header-block">
+                        <h3 class="sbold">Subscribe to the monthly newsletter</h3>
+                    </div>
+                    <div>
+                        Be the first to know what’s new in the Ladderverse. Subscribe to our newsletter now!
+                    </div>
+                </div>
+                <div class="footer-bg"></div>
+                <div class="subscribe-form w-form">
+                    <form id="wf-form-Email-Form" name="wf-form-Email-Form" data-name="Email Form" action="https://formsubmit.co/a9d4288147e43c6e20f910de07749367" method="POST">
+                        <div class="form-flex">
+                            <input type="email" class="form-field w-input" maxlength="256" name="Email-2" data-name="Email 2" placeholder="Email Address" id="Email-2" required="" />
+                            <input type="hidden" name="_subject" value="New Message from Subscription Form!" />
+                            <input type="text" name="_honey" style="display: none" />
+                            <input type="hidden" name="_next" value="#" />
+                            <input type="submit" value="Subscribe" data-wait="Please wait..." class="button white-text w-button" />
+                        </div>
+                    </form>
+                    <div class="w-form-done">
+                        <div>Thank you! Your submission has been received!</div>
+                    </div>
+                    <div class="w-form-fail">
+                        <div>Oops! Something went wrong while submitting the form.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom-block">
+                <div class="footer-bottom-inner">
+                    <div class="footer-year">
+                        <a href="index.html" aria-current="page" class="logo footer w-inline-block w--current"></a>
+                        <div class="footer-year-inner">
+                            <div class="copyright w-embed w-script">
+                                © Copyright
+                                <script type="text/javascript">
+                                    document.write(new Date().getFullYear())
+                                </script>
+                                Ladder
+                                <script>
+                                    console.log('👋 – 🔨 with ❤️ by Priyanshu & Amit')
+                                </script>
+                            </div>
+                            <div class="divider-white"></div>
+                            <a href="#" class="legal-link">Priyanshu & Amit</a
+                >
+              </div>
+            </div>
+            <div class="email-block">
+              <div class="email-header">
+                <div class="blue-line"></div>
+                <div>Email</div>
+              </div>
+              <a href="mailto:reyanshstar2001@gmail.com" class="email-link"
+                >reyanshstar2001@gmail.com</a
+              >
+            </div>
+          </div>
+          <div class="social-wrapper">
+            <div>Follow us</div>
+            <div class="social-links-wrapper">
+              <a
+                href="#"
+                target="_blank"
+                class="social-link w-inline-block"
+              ></a>
+                            <a href="#" target="_blank" class="social-link twitter w-inline-block"></a>
+                            <a href="#" target="_blank" class="social-link md w-inline-block"></a>
+                            <a href="#" target="_blank" class="social-link lk w-inline-block"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="w-embed">
+                <style>
+                    input,
+                    textarea {
+                        -webkit-appearance: none;
+                        border-radius: 0;
+                    }
+                </style>
+            </div>
+            <a href="#" target="_blank" class="check-logo w-inline-block"><img
+          src="images/CD_Logo_Icon_White.svg"
+          loading="lazy"
+          title="Project created by Amit & Priyanshu and Submitted to Dr. Ritu Gupta, BPIT, India"
+          alt="Check to community"
+      /></a>
+        </div>
+        <div style="
+        -webkit-transform: translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0)
+          rotateY(0) rotateZ(0) skew(0, 0);
+        -moz-transform: translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0)
+          rotateY(0) rotateZ(0) skew(0, 0);
+        -ms-transform: translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0)
+          rotateY(0) rotateZ(0) skew(0, 0);
+        transform: translate3d(0%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0)
+          rotateZ(0) skew(0, 0);
+      " class="loader">
+            <div data-w-id="d93d6a78-e97d-e9c2-2bbf-a113e5bc12fb" data-is-ix2-target="1" class="loading-lottie" data-animation-type="lottie" data-src="documents/Loading.json" data-loop="0" data-direction="1" data-autoplay="0" data-renderer="svg" data-default-duration="4.23757073163778"
+                data-duration="0" data-ix2-initial-state="10"></div>
+        </div>
+        <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=618ae1d30cb2b6d5feb28b34" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+        <script src="js/withpropel.js" type="text/javascript"></script>
+        <!-- [if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif] -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
+        <script>
+            gsap.registerPlugin(ScrollTrigger)
+            ScrollTrigger.matchMedia({
+                '(min-width: 768px)': function() {
+                    let tl = gsap.timeline({
+                        scrollTrigger: {
+                            trigger: '.cards-section',
+                            start: 'top top',
+                            scrub: 1,
+                            pin: true,
+                            invalidateOnRefresh: true,
+                            ease: 'none',
+                            // end: '+2500',
+                        },
+                    })
+                    tl.to('.pro-animation-fallback', {
+                        opacity: 0,
+                        duration: 0.25
+                    })
+                    tl.fromTo(
+                        '.card.one', {
+                            yPercent: 100
+                        }, {
+                            yPercent: -180,
+                            duration: 1
+                        },
+                        '<+0.05'
+                    )
+                    tl.fromTo(
+                        '.card.two', {
+                            yPercent: 100
+                        }, {
+                            yPercent: -130,
+                            duration: 1
+                        },
+                        '<'
+                    )
+                    tl.fromTo(
+                        '.card.three', {
+                            yPercent: 100
+                        }, {
+                            yPercent: -200,
+                            duration: 1
+                        },
+                        '<+0.05'
+                    )
+                    tl.fromTo(
+                        '.card.four', {
+                            yPercent: 100
+                        }, {
+                            yPercent: -140,
+                            duration: 1
+                        },
+                        '<'
+                    )
+                    tl.set(
+                        '.community-section', {
+                            marginTop: '-1450px',
+                            paddingTop: '450px'
+                        },
+                        '<'
+                    )
+                    gsap
+                        .timeline({
+                            scrollTrigger: {
+                                trigger: '.community-section',
+                                start: '-35% top',
+                                scrub: 'true',
+                                // markers: true,
+                                end: '-35% -15%',
+                            },
+                        })
+                        .to('.community-section', {
+                            backgroundColor: '#f5f8ff',
+                            duration: 0.5,
+                        })
+                },
+                '(min-width: 992px)': function() {
+                    gsap
+                        .timeline({
+                            scrollTrigger: {
+                                trigger: '.hero',
+                                start: 'top top',
+                                invalidateOnRefresh: true,
+                                // pin: true,
+                                end: 'top -5%',
+                                scrub: 1,
+                            },
+                        })
+                        .to('.hero-lottie', {
+                            xPercent: 65,
+                            yPercent: 325,
+                            scale: 6,
+                            duration: 1,
+                        })
+                        .to('.hero-text-wrapper', {
+                            opacity: 0,
+                            duration: 0.05
+                        }, '<')
+                    gsap.to('.container.brands', {
+                        opacity: 1,
+                        ease: 'none',
+                        scrollTrigger: {
+                            start: 'top 90%',
+                            trigger: '.container.brands',
+                            invalidateOnRefresh: true,
+                            scrub: true,
+                            end: 'top 70%',
+                        },
+                    })
+                },
+                '(min-width: 250px)': function() {
+                    const heroAnimLoop = gsap.timeline({
+                        paused: true,
+                        repeat: -1,
+                        //repeatDelay: 5,
+                        //delay: 5,
+                    })
+                    heroAnimLoop.to('.hero-anim-inner', {
+                        yPercent: -25,
+                        duration: 1
+                    })
+                    heroAnimLoop.to(
+                        '.hero-anim-inner', {
+                            yPercent: -50,
+                            duration: 1
+                        },
+                        '>0.5'
+                    )
+                    heroAnimLoop.to(
+                        '.hero-anim-inner', {
+                            yPercent: -77,
+                            duration: 1
+                        },
+                        '>5'
+                    )
+                    heroAnimLoop.set(
+                        '.hero-anim-inner', {
+                            yPercent: 0,
+                            duration: 0
+                        },
+                        '>0.35'
+                    )
+                    const heroAnim = gsap.timeline({
+                        paused: true,
+                        //repeatDelay: 2,
+                        delay: 2,
+                        onComplete: function() {
+                            heroAnimLoop.play()
+                        },
+                    })
+                    heroAnim.to('.hero-anim-inner', {
+                        yPercent: -25,
+                        duration: 0.5
+                    })
+                    heroAnim.to(
+                        '.hero-anim-inner', {
+                            yPercent: -50,
+                            duration: 0.5
+                        },
+                        '>0.5'
+                    )
+                    heroAnim.to(
+                        '.hero-anim-inner', {
+                            yPercent: -50,
+                            duration: 0.5
+                        },
+                        '>0.5'
+                    )
+                    heroAnim.to(
+                        '.hero-anim-inner', {
+                            yPercent: -50,
+                            duration: 0.5
+                        },
+                        '>0.5'
+                    )
+                    heroAnim.set('.body', {
+                        overflow: 'visible'
+                    })
+                    heroAnim.to('.hero-anim-inner', {
+                        yPercent: -77,
+                        duration: 1
+                    }, '>5')
+                    heroAnim.set('.hero-anim-inner', {
+                        yPercent: 0,
+                        duration: 0
+                    }, '>0.35')
+                    window.onload = function() {
+                        heroAnim.play()
+                    }
+                },
+            })
+        </script>
+        <script>
+            window.onbeforeunload = function() {
+                window.scrollTo(0, 0)
+            }
+        </script>
+</body>
+
+</html>
